@@ -14,7 +14,6 @@ import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
 
-    private val Tag = MainActivity::class.java.simpleName
     private lateinit var number1Text: EditText
     private lateinit var number2Text: EditText
     private lateinit var signText: TextView
@@ -62,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 calculateResult()
                 hideKeyboardAndDeactivateFields()
                 calculateButton.text = getString(R.string.reset)
-                calculateButton.setBackgroundColor(ContextCompat.getColor(this, R.color.button))
+                calculateButton.setBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
             } else {
                 resetFields()
             }
@@ -137,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
         // Reset the button text
         calculateButton.text = getString(R.string.calculate)
-        calculateButton.setBackgroundColor(ContextCompat.getColor(this, R.color.calculate))
+        calculateButton.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary))
         previousOperation.text = getString(R.string.previous_operation, firstNumber, sign, secondNumber, result)
 
     }

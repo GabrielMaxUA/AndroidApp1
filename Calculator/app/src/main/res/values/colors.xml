@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="button">#FFFF0000</color>
-    <color name="calculate">#6B279C</color>
+    <color name="colorAccent">#BE0F0F</color>
+    <color name="colorPrimary">#E45D5D</color>
+    <color name="colorBackground">#D3D3D3</color>
 </resources>
